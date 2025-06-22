@@ -1,0 +1,13 @@
+@use "sass:string";
+
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: string.quote($font-name);
+    src: url(#{$path}.woff) format("woff"), url(#{$path}.woff2) format("woff2"), url(#{$path}.ttf) format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face('Segoe UI', '../fonts/SegoeUI', 400, 'normal');
+@include font-face('Segoe UI', '../fonts/SegoeUI-SemiBold', 600, 'normal');

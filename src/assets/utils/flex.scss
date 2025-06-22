@@ -1,0 +1,18 @@
+@mixin d-flex($justify: flex-start, $items: flex-start, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $items;
+    flex-wrap: $wrap;
+}
+
+.d-flex {
+    @include d-flex();
+}
+
+.items-center {
+    @include d-flex(flex-start, center);
+}
+
+.justify-between {
+    @include d-flex(space-between);
+}

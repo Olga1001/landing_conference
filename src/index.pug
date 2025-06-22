@@ -1,0 +1,67 @@
+extends components/main
+
+block variables
+  - var title='Як це зроблено?';
+  - var description='Description';
+  - var pastEvents = [{date: '31/05/25', info: {title: 'Як це зроблено. AI edition',text: '' },action: {text: '', button: {text: 'ПЕРЕГЛЯНУТИ',link: '#'}}}];
+  - var futureEvents = [{date: '11/11/11',info: { title: 'Як це зроблено. Data Protection edition.', text: 'Кейси про те, як повертати дані з «технологічного пекла».З перших вуст: що рятує, коли не рятує вже нічого.І один кейс, який не можна розповідати — але ми розповімо.'},action: {text: 'Ми вже працюємо над програмою!',button: {text: 'ЗАПРОСИТИ ПРОГРАМУ',link: '#'}} }, {date: '11/11/11',info: { title: 'Як це зроблено. AI edition 2.0.',text: 'Як це зроблено. AI edition 2.0 — повертаємось за вашими проханнями!<br> Тільки реальні кейси впровадження AI/ML, тільки досвід, який хочеться скопіювати (або точно не повторити). Без води. Знову.'},action: {text: 'Ми вже працюємо над програмою!', button: { text: 'ЗАПРОСИТИ ПРОГРАМУ',link: '#'}}}];
+
+block content
+  section.section_offer.items-center
+    .container
+      h1 
+        +icon("title1", 940.6, 74.24) 
+        br
+        span.items-center
+          +icon("arrow_right_double", 56, 63.38, "c-white") 
+          +icon("title2", 792.2, 84.381)
+      .notes
+        p Як працюють проєкти в реальних умовах: 
+          span.c-blue архітектура, стек, помилки, висновки, ROI. 
+          | Це досвід, який зазвичай не потрапляє у відкритий доступ.
+      .notes.notes_space
+        p Для тих хто впроваджує технологічні зміни в компаніях.
+
+  section.section_events 
+    .container 
+      h2 Минулі події
+      +eventList(pastEvents)
+      h2 Майбутні події
+      +eventList(futureEvents)
+  
+  section.section_howItWas 
+    .container 
+      h2.h2-line Подивіться, як це було
+      .video
+        +icon("corners", "100%", "100%") 
+        video
+          source(src="#")
+  
+  section.section_whyWasProject
+    .container 
+      h2 Чому виник проєкт "Як це зроблено"?
+      .justify-between 
+        .border 
+          h4 Усе просто: ми втомилися від «візій». Бізнесу потрібна не чергова мотивація, а чесні інструкції — що працює, що ні, і як не витратити сотні тисяч на помилку.
+        div 
+          h4 
+            span.c-blue «Як це зроблено» 
+            | змінює правила гри:
+          ul.list 
+            li.d-flex
+              +icon("arrow_right_double", 23, 27, "c-blue")
+              | показати реальний досвід впровадження технологій, 
+            li.d-flex 
+              +icon("arrow_right_double", 23, 27, "c-blue")
+              | розповісти без прикрас про факапи й перемоги,
+            li.d-flex 
+              +icon("arrow_right_double", 23, 27, "c-blue")
+              | створити майданчик, де інженери, AI-фахівці та 
+              br 
+              | ІТ-директори можуть вчитися один в одного   
+
+  .note 
+    .note_logo 
+      +icon("logo", 192, 84)
+    h4.c-dark_blue За підтримки De Novo для сприяння розвитку українському бізнесу
+            

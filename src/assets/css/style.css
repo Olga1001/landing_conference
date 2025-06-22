@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../fonts/SegoeUI.woff) format("woff"), url(../fonts/SegoeUI.woff2) format("woff2"), url(../fonts/SegoeUI.ttf) format("truetype");
+  font-weight: 400;
+  font-style: "normal";
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../fonts/SegoeUI-SemiBold.woff) format("woff"), url(../fonts/SegoeUI-SemiBold.woff2) format("woff2"), url(../fonts/SegoeUI-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: "normal";
+}
+.d-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.items-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+*, *::before, *::after {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #121C30;
+  color: #FFFFFF;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  border: none;
+  appearance: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1640px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.notes {
+  padding: 6px 16px 14px 25px;
+  max-width: 700px;
+  border-left: 4px solid #68C4D7;
+  font-size: 32px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 5px;
+}
+.notes:before, .notes:after {
+  content: "";
+  position: absolute;
+  left: -9px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 4px solid #68C4D7;
+  background-color: #121C30;
+}
+.notes:before {
+  top: 0;
+}
+.notes:after {
+  bottom: 0;
+}
+.notes_space {
+  margin: 9.4vh 0 0 253px;
+}
+
+.c-blue {
+  color: #68C4D7;
+}
+
+/* section_offer */
+.section_offer {
+  background: url("../img/bg_main.jpg") no-repeat center bottom/cover;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+.section_offer h1 {
+  margin-bottom: 13.1vh;
+}
+.section_offer h1 span {
+  padding-left: 253px;
+  margin-top: 20px;
+}
+.section_offer h1 span svg {
+  margin-right: 13px;
+}
+
+/* section_events */
+.section_events {
+  padding: 97px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

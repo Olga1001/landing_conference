@@ -1,0 +1,19 @@
+mixin icon(name, w = 'auto', h = 'auto', mod = '')
+	svg(class="svg-sprite-icon icon-" + name + ' ' + mod,  height=h,  width=w)
+		use(xlink:href="img/sprite.svg#" + name)
+
+mixin eventList(events)
+	ul.list_events
+		each event in events 
+			li.justify-between 
+				.list_events_date= event.date
+				.list_events_info
+					div= event.info.title
+					if event.info.text
+						p!= event.info.text
+				.list_events_action
+					if event.action.text
+						p= event.action.text 
+					if event.action.button
+						a(href=event.action.button.link, class="btn")= event.action.button.text 
+							+icon("arrow_right", 17, 32)
