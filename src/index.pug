@@ -31,16 +31,15 @@ block content
   
   section.section_howItWas 
     .container 
-      h2.h2-line Подивіться, як це було
+      h2.title-line Подивіться, як це було
       .video
         +icon("corners", "100%", "100%") 
-        video
-          source(src="#")
-  
+        iframe(width="100%" height="100%" src="https://www.youtube.com/embed/zw0qJAVv9-g?si=oV9JSXeVzdaiIX-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+    
   section.section_whyWasProject
     .container 
       h2 Чому виник проєкт "Як це зроблено"?
-      .justify-between 
+      .d-flex.justify-between 
         .border 
           h4 Усе просто: ми втомилися від «візій». Бізнесу потрібна не чергова мотивація, а чесні інструкції — що працює, що ні, і як не витратити сотні тисяч на помилку.
         div 
@@ -61,7 +60,21 @@ block content
               | ІТ-директори можуть вчитися один в одного   
 
   .note 
-    .note_logo 
-      +icon("logo", 192, 84)
-    h4.c-dark_blue За підтримки De Novo для сприяння розвитку українському бізнесу
+    .container.items-center 
+      .note_logo 
+        +icon("logo", 192, 84)
+      h4.c-dark_blue За підтримки De Novo для сприяння розвитку українському бізнесу
+
+  section.section_partners 
+    .container 
+      h2 Партнери конференції:
+    .partners-logos
+      .flex-wrap.justify-center 
+        img(src="../img/logo.svg" alt="logo denovo" height="48")
+        img(src="../img/logo.svg" alt="logo denovo" height="48")
+      .flex-wrap.justify-center 
+        img(src="../img/logo.svg" alt="logo denovo" height="48")
+        img(src="../img/logo.svg" alt="logo denovo" height="48")
+        img(src="../img/logo.svg" alt="logo denovo" height="48")
+
             

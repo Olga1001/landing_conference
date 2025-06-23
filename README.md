@@ -1,3 +1,3 @@
 ## npm i
-## npx webpack
+## npx webpack / npm run build
 ## npx webpack serve

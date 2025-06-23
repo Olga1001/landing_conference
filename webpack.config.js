@@ -56,13 +56,13 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        include: path.resolve(__dirname, 'src/assets/img'),
+        include: path.resolve(__dirname, 'src/assets/img/sprite'),
         use: [
           {
             loader: 'svg-sprite-loader',
             options: {
               extract: true,
-              spriteFilename: 'img/sprite.svg',
+              spriteFilename: 'img/sprite/sprite.svg',
               symbolId: '[name]',
             },
           },
@@ -71,7 +71,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        exclude: path.resolve(__dirname, 'src/assets/img'),
+        exclude: path.resolve(__dirname, 'src/assets/img/sprite'),
         type: 'asset/resource',
         generator: {
           filename: 'img/[name][ext]',
@@ -102,15 +102,15 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: 'src/assets/img',
+          from: path.resolve(__dirname, 'src/assets/img'),
           to: 'img',
           globOptions: {
-            ignore: ['**/*.svg'],
+            ignore: ['**/sprite/*.svg'],
           },
+          noErrorOnMissing: true,
         },
-        { from: 'src/assets/fonts', to: 'fonts' },
-        { from: 'src/assets/css', to: 'css' },
-        // видалив копіювання css, бо стилі збирає webpack
+        { from: 'src/assets/fonts', to: path.resolve(__dirname, 'dist/fonts') },
+        { from: 'src/assets/css', to: path.resolve(__dirname, 'dist/css') },
       ],
     }),
     new LiveReloadPlugin({ appendScriptTag: true }),

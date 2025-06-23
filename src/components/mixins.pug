@@ -1,11 +1,11 @@
 mixin icon(name, w = 'auto', h = 'auto', mod = '')
 	svg(class="svg-sprite-icon icon-" + name + ' ' + mod,  height=h,  width=w)
-		use(xlink:href="img/sprite.svg#" + name)
+		use(xlink:href="img/sprite/sprite.svg#" + name)
 
 mixin eventList(events)
 	ul.list_events
 		each event in events 
-			li.justify-between 
+			li.d-flex.justify-between 
 				.list_events_date= event.date
 				.list_events_info
 					div= event.info.title
