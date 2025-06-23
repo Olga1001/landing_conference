@@ -12,16 +12,33 @@
 }
 .d-flex {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
 }
 
 .items-center {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 *, *::before, *::after {
@@ -34,7 +51,7 @@
 body {
   background: #121C30;
   color: #FFFFFF;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -53,6 +70,51 @@ ul, li {
 h2 {
   font-size: 80px;
   font-weight: 600;
+  margin-bottom: 64px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.title-line {
+  position: relative;
+  width: fit-content;
+  padding-right: 40px;
+  background: #121C30;
+}
+.title-line:after, .title-line:before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+.title-line:after {
+  width: 100vw;
+  background: #68C4D7;
+  height: 4px;
+  left: 0;
+  z-index: -1;
+}
+.title-line:before {
+  left: 99%;
+  background: #121C30;
+  border: 4px solid #68C4D7;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+.title-line.left {
+  padding: 0 0 0 40px;
+}
+.title-line.left:after {
+  left: auto;
+  right: 0;
+}
+.title-line.left:before {
+  left: auto;
+  right: 99%;
 }
 
 .container {
@@ -91,8 +153,66 @@ h2 {
   margin: 9.4vh 0 0 253px;
 }
 
+.border {
+  border: 4px solid #68C4D7;
+  max-width: 665px;
+  width: 100%;
+  padding: 19px 19px 24px;
+}
+
 .c-blue {
   color: #68C4D7;
+  fill: #68C4D7;
+}
+
+.c-white {
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.c-dark_blue {
+  color: #121C30;
+}
+
+.btn {
+  border: 4px solid #68C4D7;
+  width: 100%;
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.btn svg {
+  margin-left: 10px;
+}
+
+.video {
+  position: relative;
+  max-width: 1303px;
+  height: 807.4px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.video > svg {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}
+.video iframe {
+  margin: auto;
+  width: 88%;
+  height: 81%;
+  display: block;
 }
 
 /* section_offer */
@@ -114,7 +234,104 @@ h2 {
 
 /* section_events */
 .section_events {
-  padding: 97px 0;
+  padding: 97px 0 7px;
+}
+.section_events h2 {
+  margin-bottom: 62px;
+}
+
+/* list_events */
+.list_events li {
+  margin-bottom: 52px;
+}
+.list_events_date {
+  width: 140px;
+}
+.list_events_date, .list_events_info div {
+  font-size: 32px;
+  font-weight: 600;
+}
+.list_events_info {
+  width: 100%;
+  max-width: 744px;
+}
+.list_events_info div {
+  background-color: #68C4D7;
+  padding: 0 9px;
+  line-height: 46px;
+  color: #121C30;
+  margin-bottom: 12px;
+}
+.list_events_action {
+  width: 100%;
+  max-width: 470px;
+  text-align: center;
+}
+.list_events_action > p {
+  margin-bottom: 24px;
+  line-height: 46px;
+}
+
+/* section_howItWas  */
+.section_howItWas {
+  overflow: hidden;
+  background: url("../img/bg_2.png") no-repeat center bottom/cover;
+  padding: 54px 0 86px;
+}
+.section_howItWas h2 {
+  margin-bottom: 27px;
+}
+
+/* section_whyWasProject */
+.section_whyWasProject {
+  padding: 47px 0 125px;
+}
+
+.list li {
+  margin-top: 16px;
+}
+.list li svg {
+  margin-right: 15px;
+  margin-top: 6px;
+}
+
+.note {
+  background: #68C4D7;
+  position: relative;
+}
+.note_logo {
+  border-radius: 14px;
+  background: #FFFFFF;
+  padding: 21px 50px;
+  margin: -36px 24px -36px 0;
+}
+
+/* section_partners */
+.section_partners {
+  padding-top: 140px;
+}
+
+.partners-logos {
+  border-top: 4px solid #68C4D7;
+  border-bottom: 4px solid #68C4D7;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px 0 20px;
+}
+.partners-logos img, .partners-logos svg {
+  object-fit: contain;
+  margin: 30px 90px;
+  width: auto;
+}
+
+/* footer */
+.footer {
+  padding: 120px 0;
+}
+.footer h4 {
+  margin: -12px 14px 0 0;
+}
+.footer_social {
+  margin-left: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
