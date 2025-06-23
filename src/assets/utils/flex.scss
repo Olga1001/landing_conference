@@ -4,23 +4,23 @@
     align-items: $items;
 }
 
-.d-flex {
-    display: flex;
-}
-
 .items-center {
+    display: flex;
     align-items: center;
 }
 
 .justify-between {
+    display: flex;
     justify-content: space-between;
 }
 
 .justify-around {
+    display: flex;
     justify-content: space-around;
 }
 
 .justify-center {
+    display: flex;
     justify-content: center;
 }
 

@@ -5,7 +5,7 @@ mixin icon(name, w = 'auto', h = 'auto', mod = '')
 mixin eventList(events)
 	ul.list_events
 		each event in events 
-			li.d-flex.justify-between 
+			li.justify-between 
 				.list_events_date= event.date
 				.list_events_info
 					div= event.info.title
