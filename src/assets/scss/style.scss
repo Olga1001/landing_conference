@@ -177,8 +177,9 @@ h4 {
 /* section_offer */
 .section_offer {
     background: url('../img/bg_main.jpg') no-repeat right bottom / cover;
-    min-height: 100vh;
+    height: 1080px;
     padding-bottom: 30px;
+    position: relative;
     & h1 {
         margin-bottom: 13.1vh;
         span {
@@ -294,5 +295,87 @@ h4 {
     }
     &_social {
         margin-left: 14px;
+    }
+}
+
+.cube {
+    position: absolute;
+    right: 170px;
+    bottom: 201px;
+    width: 507px;
+    height: auto;
+}
+
+.icon_1 {
+    fill: url(#_Градієнт_без_назви_6);
+}
+
+.icon_2 {
+    fill: url(#_Градієнт_без_назви_62); 
+}
+
+.icon_3 {
+    fill: url(#_Градієнт_без_назви_2);
+}
+
+.icon_4 {
+    fill: url(#_Градієнт_без_назви_3);
+}
+
+.icon_5 {
+    fill: url(#_Градієнт_без_назви_34);
+}
+
+.icon_6 {
+     fill: url(#_Градієнт_без_назви_4);
+}
+
+.icon_7 {
+     fill: url(#_Градієнт_без_назви_39);
+}
+
+.icon_8 {
+    fill: url(#_Градієнт_без_назви_319);
+}
+
+.icon_1, .icon_2, .icon_3, .icon_4,
+.icon_5, .icon_6, .icon_7, .icon_8 {
+  opacity: 0.3;
+  animation: highlightIcon 8s infinite ease-in-out;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.icon_1 { animation-delay: 0s; }
+.icon_2 { animation-delay: 1s; }
+.icon_3 { animation-delay: 2s; }
+.icon_4 { animation-delay: 3s; }
+.icon_5 { animation-delay: 4s; }
+.icon_6 { animation-delay: 5s; }
+.icon_7 { animation-delay: 6s; }
+.icon_8 { animation-delay: 7s; }
+
+
+@keyframes highlightIcon {
+  0% { opacity: 0.3; }
+  12.5% { opacity: 1; }
+  25% { opacity: 0.3; }
+  100% { opacity: 0.3; }
+}
+
+
+@media (max-height: 1080px) {
+    .section_offer {
+        height: 100vh;
+    }
+  
+}
+
+@media (min-width: 1921px) {
+    .cube {
+        right: 8.99vw;
+        bottom: 10.6vw;
+        width: 26.4vw;
+        height: auto;
     }
 }
