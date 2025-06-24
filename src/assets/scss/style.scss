@@ -368,14 +368,18 @@ h4 {
     .section_offer {
         height: 100vh;
     }
+     .cube {
+        right: 165px;
+        bottom: 196px;
+        width: 495px;
+    }
   
 }
 
 @media (min-width: 1921px) {
     .cube {
         right: 8.99vw;
-        bottom: 10.6vw;
+        bottom: 10.4vw;
         width: 26.4vw;
-        height: auto;
     }
 }
