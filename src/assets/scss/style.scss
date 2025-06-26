@@ -327,11 +327,11 @@ h4 {
 }
 
 .icon_6 {
-     fill: url(#_Градієнт_без_назви_4);
+    fill: url(#_Градієнт_без_назви_39);
 }
 
 .icon_7 {
-     fill: url(#_Градієнт_без_назви_39);
+    fill: url(#_Градієнт_без_назви_4);
 }
 
 .icon_8 {
@@ -340,10 +340,11 @@ h4 {
 
 .icon_1, .icon_2, .icon_3, .icon_4,
 .icon_5, .icon_6, .icon_7, .icon_8 {
-  opacity: 0.3;
-  animation: highlightIcon 8s infinite ease-in-out;
-  transform-origin: center;
-  transform-box: fill-box;
+    opacity: 0.5; 
+    filter: drop-shadow(0 0 0px #52b9ff);
+    animation: highlightIcon 8s infinite ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
 .icon_1 { animation-delay: 0s; }
@@ -357,10 +358,22 @@ h4 {
 
 
 @keyframes highlightIcon {
-  0% { opacity: 0.3; }
-  12.5% { opacity: 1; }
-  25% { opacity: 0.3; }
-  100% { opacity: 0.3; }
+    0% { 
+        opacity: 0.5; 
+        filter: drop-shadow(0 0 0px #52b9ff);
+        }
+    12.5% { 
+        opacity: 1; 
+        filter: drop-shadow(0 0 10px #52b9ff);
+        }
+    25% { 
+        opacity: 0.5; 
+        filter: drop-shadow(0 0 0px #52b9ff);
+    }
+    100% { 
+        opacity: 0.5; 
+        filter: drop-shadow(0 0 0px #52b9ff);
+    }
 }
 
 
@@ -368,10 +381,27 @@ h4 {
     .section_offer {
         height: 100vh;
     }
-     .cube {
-        right: 165px;
-        bottom: 196px;
-        width: 495px;
+    //  .cube {
+    //     right: 165px;
+    //     bottom: 196px;
+    //     width: 495px;
+    // }
+  
+}
+
+@media (max-height: 810px) and (max-width: 1440px) {
+    .cube {
+        right: 130px;
+        bottom: 156px;
+        width: 375px;
+    }
+}
+
+@media (max-height: 1080px) and (max-width: 1440px) and (min-height: 810px) {
+       .cube {
+        right: 15.7vh;
+        bottom: 18.6vh;
+        width: 46.9vh;
     }
   
 }
