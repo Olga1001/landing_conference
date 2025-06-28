@@ -4,14 +4,13 @@
     align-items: $items;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .items-center {
     display: flex;
     align-items: center;
-}
-
-.justify-between {
-    display: flex;
-    justify-content: space-between;
 }
 
 .justify-around {
@@ -19,16 +18,32 @@
     justify-content: space-around;
 }
 
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+}
 .justify-center {
     display: flex;
     justify-content: center;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 .flex-end-center {
     @include d-flex(flex-end, center);
 }
 
-.flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: 991px) {
+    .d-lg-none {
+        display: none;
+    }
+    .flex-lg-end-center {
+        @include d-flex(flex-end, center);
+    }
+    .justify-lg-between {
+        display: flex;
+        justify-content: space-between;
+    }
 }

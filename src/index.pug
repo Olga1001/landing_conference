@@ -4,17 +4,13 @@ block variables
   - var title='Як це зроблено?';
   - var description='Description';
   - var pastEvents = [{date: '31/05/25', info: {title: 'Як це зроблено. AI edition',text: '' },action: {text: '', button: {text: 'ПЕРЕГЛЯНУТИ',link: '#'}}}];
-  - var futureEvents = [{date: '11/11/11',info: { title: 'Як це зроблено. Data Protection edition.', text: 'Кейси про те, як повертати дані з «технологічного пекла».З перших вуст: що рятує, коли не рятує вже нічого.І один кейс, який не можна розповідати — але ми розповімо.'},action: {text: 'Ми вже працюємо над програмою!',button: {text: 'ЗАПРОСИТИ ПРОГРАМУ',link: '#'}} }, {date: '11/11/11',info: { title: 'Як це зроблено. AI edition 2.0.',text: 'Як це зроблено. AI edition 2.0 — повертаємось за вашими проханнями!<br> Тільки реальні кейси впровадження AI/ML, тільки досвід, який хочеться скопіювати (або точно не повторити). Без води. Знову.'},action: {text: 'Ми вже працюємо над програмою!', button: { text: 'ЗАПРОСИТИ ПРОГРАМУ',link: '#'}}}];
+  - var futureEvents = [{date: '11/11/11',info: { title: 'Як це зроблено. Data Protection edition.', text: 'Кейси про те, як повертати дані з «технологічного пекла».<br> З перших вуст: що рятує, коли не рятує вже нічого.<br> І один кейс, який не можна розповідати — але ми розповімо.'},action: {text: 'Ми вже працюємо над програмою!',button: {text: 'ЗАПРОСИТИ ПРОГРАМУ',link: '#'}} }, {date: '11/11/11',info: { title: 'Як це зроблено. AI edition 2.0.',text: 'Як це зроблено. AI edition 2.0 — повертаємось за вашими проханнями!<br> Тільки реальні кейси впровадження AI/ML, тільки досвід, який хочеться скопіювати (або точно не повторити). Без води. Знову.'},action: {text: 'Ми вже працюємо над програмою!', button: { text: 'ЗАПРОСИТИ ПРОГРАМУ',link: '#'}}}];
 
 block content
   section.section_offer.items-center
-    svg.cube(id='_Шар_1' data-name='Шар_1' xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 511.95 424.25')
+    img.cube_empty(src="../img/bg_main.jpg" alt="cube")
+    svg.cube(xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 511.95 424.25')
       defs
-        filter(id="glow" x="-50%" y="-50%" width="200%" height="200%")
-          feGaussianBlur(stdDeviation="4" result="coloredBlur")
-          feMerge
-            feMergeNode(in="coloredBlur")
-            feMergeNode(in="SourceGraphic")
         lineargradient(id='_Градієнт_без_назви_6' data-name='Градієнт без назви 6' x1='225.48' y1='20.05' x2='300.65' y2='21.76' gradientunits='userSpaceOnUse')
           stop(offset='0' stop-color='#86fcf6')
           stop(offset='.21' stop-color='#7aedf7')
@@ -80,17 +76,19 @@ block content
 
     .container
       h1 
-        +icon("title1", 940.6, 74.24) 
+        +icon("title1", "48.9vw", "3.8vw") 
         br
         span.items-center
-          +icon("arrow_right_double", 56, 63.38, "c-white") 
-          +icon("title2", 792.2, 84.381)
+          +icon("arrow_right_double", "3.3vw", "3.3vw", "c-white") 
+          +icon("title2", "41.25vw", "4.4vw")
       .notes
         p Як працюють проєкти в реальних умовах: 
           span.c-blue архітектура, стек, помилки, висновки, ROI. 
           | Це досвід, який зазвичай не потрапляє у відкритий доступ.
       .notes.notes_space
-        p Для тих хто впроваджує технологічні зміни в компаніях.
+        p Для тих хто впроваджує
+          br.d-lg-none
+          | технологічні зміни в компаніях.
 
   section.section_events 
     .container 
@@ -109,10 +107,10 @@ block content
   section.section_whyWasProject
     .container 
       h2 Чому виник проєкт "Як це зроблено"?
-      .justify-between 
+      .justify-lg-between
         .border 
           h4 Усе просто: ми втомилися від «візій». Бізнесу потрібна не чергова мотивація, а чесні інструкції — що працює, що ні, і як не витратити сотні тисяч на помилку.
-        div 
+        .how_work 
           h4 
             span.c-blue «Як це зроблено» 
             | змінює правила гри:
@@ -133,7 +131,9 @@ block content
     .container.items-center 
       .note_logo 
         +icon("logo", 192, 84)
-      h4.c-dark_blue За підтримки De Novo для сприяння розвитку українському бізнесу
+      h4.c-dark_blue За підтримки De Novo
+        br.d-lg-none
+        | для сприяння розвитку українському бізнесу
 
   section.section_partners 
     .container 
@@ -142,9 +142,7 @@ block content
       .flex-wrap.justify-center 
         img(src="img/logo.svg" alt="logo denovo" height="48")
         img(src="img/logo.svg" alt="logo denovo" height="48")
+        img(src="img/logo.svg" alt="logo denovo" height="48")
       .flex-wrap.justify-center 
         img(src="img/logo.svg" alt="logo denovo" height="48")
         img(src="img/logo.svg" alt="logo denovo" height="48")
-        img(src="img/logo.svg" alt="logo denovo" height="48")
-
-            
