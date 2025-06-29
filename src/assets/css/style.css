@@ -248,6 +248,7 @@ h4 {
   padding-bottom: 30px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .section_offer .title-h1 {
   margin-bottom: 13.1vh;
@@ -266,16 +267,6 @@ h4 {
   bottom: 18.6111111111vh; /* або ~18.6vh */
   width: 46.9444444444vh; /* або ~46.9vh */
   height: auto;
-}
-
-.cube_empty {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  width: 100%;
-  height: auto;
-  pointer-events: none;
 }
 
 .icon_1 {
