@@ -739,6 +739,12 @@ h4 {
     padding: 0 15px;
   }
 }
+@media (max-width: 767px) and (min-width: 1037px) {
+  .cube {
+    bottom: 12.7vw;
+    width: 60.3vw;
+  }
+}
 @media (max-height: 600px) and (min-width: 400px) {
   .section_offer {
     background: #000 url("../img/bg_main.webp") no-repeat right bottom/cover;
