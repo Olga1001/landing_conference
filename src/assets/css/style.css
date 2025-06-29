@@ -550,7 +550,7 @@ h4 {
 }
 @media (max-width: 767px) and (min-height: 520px) {
   .section_offer {
-    padding-bottom: 33vh;
+    padding-bottom: 34vh;
   }
 }
 @media (max-width: 767px) {
@@ -567,7 +567,7 @@ h4 {
     display: none;
   }
   .section_offer .title-h1 {
-    margin-bottom: 11vh;
+    margin-bottom: 10vh;
   }
   .section_offer .title-h1 > svg {
     width: 281.16px;
