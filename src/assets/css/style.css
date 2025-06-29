@@ -557,7 +557,7 @@ h4 {
     transform: translateX(50%);
   }
   .section_offer .title-h1 {
-    margin-bottom: 10vh;
+    margin-bottom: 9vh;
   }
   .section_offer .title-h1 > svg {
     width: 281.16px;
@@ -739,7 +739,7 @@ h4 {
     padding: 0 15px;
   }
 }
-@media (max-height: 600px) {
+@media (max-height: 600px) and (min-width: 400px) {
   .section_offer {
     background: #000 url("../img/bg_main.webp") no-repeat right bottom/cover;
   }
