@@ -181,7 +181,7 @@ h4 {
 /* section_offer */
 .section_offer {
     background: #000; //url('') no-repeat right bottom / cover;
-    min-height: 100vh;
+    min-height: var(--app-height, 100vh);
     padding-bottom: 30px;
     position: relative;
     z-index: 1;
