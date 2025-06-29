@@ -185,7 +185,7 @@ h4 {
     padding-bottom: 30px;
     position: relative;
     z-index: 1;
-    & h1 {
+    & .title-h1 {
         margin-bottom: 13.1vh;
         span {
             padding-left: 13vw;
@@ -488,7 +488,7 @@ h4 {
         & .cube_empty {
             display: none;
         }
-        h1 { 
+        .title-h1 { 
             margin-bottom: 11vh;
             & > svg {
                 width: 281.16px;

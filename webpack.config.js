@@ -111,6 +111,7 @@ module.exports = {
         },
         { from: 'src/assets/fonts', to: path.resolve(__dirname, 'dist/fonts') },
         { from: 'src/assets/css', to: path.resolve(__dirname, 'dist/css') },
+        { from: 'src/assets/js', to: path.resolve(__dirname, 'dist/js') },
       ],
     }),
     new LiveReloadPlugin({ appendScriptTag: true }),

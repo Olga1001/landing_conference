@@ -247,14 +247,14 @@ h4 {
   position: relative;
   z-index: 1;
 }
-.section_offer h1 {
+.section_offer .title-h1 {
   margin-bottom: 13.1vh;
 }
-.section_offer h1 span {
+.section_offer .title-h1 span {
   padding-left: 13vw;
   margin-top: 20px;
 }
-.section_offer h1 span svg {
+.section_offer .title-h1 span svg {
   margin-right: 13px;
 }
 
@@ -564,23 +564,23 @@ h4 {
   .section_offer .cube_empty {
     display: none;
   }
-  .section_offer h1 {
+  .section_offer .title-h1 {
     margin-bottom: 11vh;
   }
-  .section_offer h1 > svg {
+  .section_offer .title-h1 > svg {
     width: 281.16px;
     height: 22.11px;
   }
-  .section_offer h1 span {
+  .section_offer .title-h1 span {
     padding-left: 76px;
     margin-top: 4px;
   }
-  .section_offer h1 span svg.icon-arrow_right_double {
+  .section_offer .title-h1 span svg.icon-arrow_right_double {
     width: 16.72px;
     height: 18.88px;
     margin-right: 4px;
   }
-  .section_offer h1 span svg.icon-title2 {
+  .section_offer .title-h1 span svg.icon-title2 {
     width: 236.8px;
     height: 25.13px;
   }
