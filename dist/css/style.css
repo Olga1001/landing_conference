@@ -393,7 +393,7 @@ h4 {
 /* section_howItWas  */
 .section_howItWas {
   overflow: hidden;
-  background: url("../img/bg_2.png") no-repeat center bottom/cover;
+  background: url("../img/bg_2.webp") no-repeat center bottom/cover;
   padding: 54px 0 86px;
 }
 .section_howItWas h2 {
@@ -559,7 +559,7 @@ h4 {
     transform: translateX(50%);
   }
   .section_offer {
-    background: #000 url("../img/mobile_bg_main.jpg") no-repeat center bottom/cover;
+    background: #000 url("../img/mobile_bg_main.webp") no-repeat center bottom/cover;
   }
   .section_offer .cube_empty {
     display: none;
