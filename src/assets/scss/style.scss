@@ -756,6 +756,14 @@ h4 {
     }
 }
 
+@media (min-width: 1920px) and (min-height: 800px) {
+    .cube {
+        right: 167px;
+        bottom: 197px;
+        width: 509px;
+    }
+}
+
 @media (width: 820px) and (height: 1180px) {
     .cube {
         bottom: 9vh;
