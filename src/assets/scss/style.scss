@@ -683,13 +683,9 @@ h4 {
     .container {
         padding: 0 15px;
     }
-    // .cube {
-    //     bottom: 22.7vw;
-    //     width: 61.3vw;
-    // }
 }
 
-@media (max-width: 767px) and (min-width: 1037px) {
+@media (max-width: 767px) and (min-height: 1037px) {
     .cube {
         bottom: 12.7vw;
         width: 60.3vw;
@@ -749,7 +745,7 @@ h4 {
     
 }
 
-@media (min-width: 960px) and (max-height: 1536px) {
+@media (min-width: 876px) and (max-height: 1536px) {
     .cube {
         bottom: 9vh;
         width: 37.5vh;
