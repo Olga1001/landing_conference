@@ -786,7 +786,7 @@ h4 {
     margin: 5.4vh 0 0 13vw;
   }
 }
-@media (min-width: 876px) and (max-height: 1536px) {
+@media (min-width: 876px) and (max-width: 1400px) and (max-height: 1536px) {
   .cube {
     bottom: 9vh;
     width: 37.5vh;
