@@ -172,8 +172,8 @@ h4 {
     }
     & iframe {
         margin: auto;
-        width: 88%;
-        height: 81%;
+        max-width: 1160px;
+        height: 654px;
         display: block;
     }
 }
@@ -389,6 +389,9 @@ h4 {
 
 
 @media (max-width: 1440px) {
+    .video iframe {
+        height: 45.3vw;
+    }
     .cube {
         right: 16.4vh;
         bottom: 19.4vh;
