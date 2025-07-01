@@ -172,9 +172,9 @@ h4 {
     }
     & iframe {
         margin: auto;
-        max-width: 1160px;
+        max-width: 107.4vh;
         width: 100%;
-        height: 654px;
+        height: 60.5vh;
         display: block;
     }
 }
@@ -389,9 +389,9 @@ h4 {
 
 /* media */
 @media (max-width: 1440px) {
-    .video iframe {
-        height: 45.3vw;
-    }
+    // .video iframe {
+    //     height: 45.3vw;
+    // }
     .cube {
         right: 16.4vh;
         bottom: 19.4vh;
