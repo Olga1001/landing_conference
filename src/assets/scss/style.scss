@@ -354,19 +354,19 @@ h4 {
 .icon_5, .icon_6, .icon_7, .icon_8 {
     opacity: 0.4; 
     filter: drop-shadow(0 0 0px #01131a);
-    animation: highlightIcon 4s infinite ease-in-out;
+    animation: highlightIcon 4.8s infinite ease-in-out;
     transform-origin: center;
     transform-box: fill-box;
 }
 
 .icon_1 { animation-delay: 0s; }
-.icon_2 { animation-delay: 0.5s; }
-.icon_3 { animation-delay: 1s; }
-.icon_4 { animation-delay: 1.5s; }
-.icon_5 { animation-delay: 2s; }
-.icon_6 { animation-delay: 2.5s; }
-.icon_7 { animation-delay: 3s; }
-.icon_8 { animation-delay: 3.5s; }
+.icon_2 { animation-delay: 0.6s; }
+.icon_3 { animation-delay: 1.2s; }
+.icon_4 { animation-delay: 1.8s; }
+.icon_5 { animation-delay: 2.4s; }
+.icon_6 { animation-delay: 3s; }
+.icon_7 { animation-delay: 3.6s; }
+.icon_8 { animation-delay: 4.2s; }
 
 @keyframes highlightIcon {
     0% { 
