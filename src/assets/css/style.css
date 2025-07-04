@@ -493,6 +493,11 @@ h4 {
     min-height: 51.25vw;
   }
 }
+@media (min-width: 1800px) and (max-height: 911px) {
+  .section_offer {
+    min-height: 48vw;
+  }
+}
 @media (max-width: 1440px) and (min-height: 900px) {
   .section_offer {
     min-height: 63vw;
